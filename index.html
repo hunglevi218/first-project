@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body">
+    <div class="slidebar-mini">
+        <div class="minibar-wrapper d-none">
+            <div class="head-minibar">
+                <div class="Language">
+                    <button class="vi-btn">VI</button>
+                    <button class="en-btn">EN</button>
+                </div>
+                <p onclick="CloseSlidebarMini()" class="close-minibar">x</p>
+            </div>
+            <div class="minibar-links">
+                <div class="minibar-link personal-customer">
+                    <div class='minilink-btn'>
+                        <p class="minibar-link-txt">Khách hàng cá nhân</p>
+                        <p class="minibar-link-arrow">^</p>
+                    </div>
+                    <div class="link-list d-none">
+                        <div class="link-wrapper link-wrapper-open">
+                            <a class="nav-mini" href="">Khách hàng cá nhân</a>
+                            <a class="nav-mini" href="">Khách hàng doanh nghiệp</a>
+                            <a class="nav-mini" href="">Về FPT Telecom</a>
+                            <a class="nav-mini" href="">Tuyển dụng</a>
+                            <a class="nav-mini" href="">Điểm giao dịch</a>
+                            <a class="nav-mini" href="">Lịch phát sóng</a>
+                            <a class="nav-mini" href="">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="minibar-link">
+                    <div class='minilink-btn'>
+                        <p class="minibar-link-txt">Sản phẩm dịch vụ</p>
+                        <p class="minibar-link-arrow">^</p>
+                    </div>
+                    <div class="link-list d-none">
+                        <div class="link-wrapper link-wrapper-open">
+                            <div class="d-flex">
+                                <div class="product-logo">
+                                    <img height="35px" src="/imgs/mn-net.png" alt="">
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title"> Internet FPT</p>
+                                    <a class="product-link" href="">Cáp quang Cá nhân</a>
+                                    <a class="product-link" href="">Cáp quang Doanh nghiệp</a>
+                                    <a class="product-link" href="">Internet + Truyền hình</a>
+                                    <a class="product-link" href="">F-Safe</a>
+                                    <a class="product-link" href="">Gói Lux</a>
+                                    <a class="product-link" href="">Ultra Fast</a>
+                                    <a class="product-link" href="">FPT 360 WIFI</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/mn-tv.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">FPT Play</p>
+                                    <a class="product-link" href="">Gói dịch vụ SMAX</a>
+                                    <a class="product-link" href="">Gói dịch vụ SVIP</a>
+                                    <a class="product-link" href="">Lịch phát sóng</a>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/mn-service.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Dịch vụ Online</p>
+                                    <a class="product-link" href="">Foxpay</a>
+                                    <a class="product-link" href="">Fshare</a>
+                                    <a class="product-link" href="">Startalk</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/mn-smarthome.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Smart Home</p>
+                                    <a class="product-link" href="">FPT iHome</a>
+                                    <a class="product-link" href="">FPT Smart Home</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/mn-smarthome.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">FPT Camera</p>
+                                    <a class="product-link" href="">FPT Camera IQ 2</a>
+                                    <a class="product-link" href="">FPT Camera IQ 2S</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/mn-fpro.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Dịch vụ kỹ thuật</p>
+                                    <a class="product-link" href="">Wifi Support</a>
+                                    <a class="product-link" href="">IT Remove Helpdesk</a>
+                                    <a class="product-link" href="">IT Onsite Helpdesk</a>
+                                    <a class="product-link" href="">IT Man</a>
+                                    <a class="product-link" href="">IT Outsource</a>
+                                    <a class="product-link" href="">Dịch vụ viễn thông và điện nhẹ</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/i-hifpt_.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Hi FPT</p>
+                                    <a class="product-link" href="">Tính năng nổi bật</a>
+                                    <a class="product-link" href="">Dịch vụ điện lạnh</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minibar-link-single">
+                    <div class='minilink-btn-single'>
+                        <p class="minibar-link-txt-single">Khuyến mại</p>
+                    </div>
+                </div>
+                <div class="minibar-link">
+                    <div class='minilink-btn'>
+                        <p class="minibar-link-txt">Hỗ trợ</p>
+                        <p class="minibar-link-arrow">^</p>
+                    </div>
+                    <div class="link-list d-none">
+                        <div class="link-wrapper link-wrapper-open">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub2_mn-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title"> Hỗ trợ thông tin</p>
+                                    <a class="product-link" href="">Câu hỏi thường gặp</a>
+                                    <a class="product-link" href="">Hướng dẫn sử dụng</a>
+                                    <a class="product-link" href="">Lịch phát sóng</a>
+                                    <a class="product-link" href="">Hướng dẫn thủ tục</a>
+                                    <a class="product-link" href="">Quản lý chất lượng dịch vụ</a>
+                                    <a class="product-link" href="">Điều khoản bảo mật</a>
+                                    <!-- <a class="product-link" href="">FPT 360 WIFI</a> -->
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub2_mn-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Hỗ trợ kỹ thuật</p>
+                                    <a class="product-link" href="">Hướng dẫn cài đặt</a>
+                                    <a class="product-link" href="">Xử lý sự cố</a>
+                                    <!-- <a class="product-link" href="">Lịch phát sóng</a> -->
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub2_mn-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Liên hệ 24/7</p>
+                                    <a class="product-link" href="">Danh bạ điện thoại công cộng</a>
+                                    <a class="product-link" href="">Đăng ký Online</a>
+                                    <a class="product-link" href="">Hi FPT</a>
+                                    <a class="product-link" href="">Điểm giao dịch</a>
+                                    <a class="product-link" href="">Tổng đài 1900 6600</a>
+                                    <a class="product-link" href="">Email</a>
+                                    <a class="product-link" href="">Facebook</a>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub2_mn-4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Phản hồi khách hàng</p>
+                                    <a class="product-link" href="">Góp ý</a>
+                                    <a class="product-link" href="">Khảo sát</a>
+                                    <a class="product-link" href="">Đánh giá về website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minibar-link">
+                    <div class='minilink-btn'>
+                        <p class="minibar-link-txt">Member FPT</p>
+                        <p class="minibar-link-arrow">^</p>
+                    </div>
+                    <div class="link-list d-none">
+                        <div class="link-wrapper link-wrapper-open">
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub3_mn-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Tài khoản của bạn</p>
+                                    <a class="product-link" href="">Thông tin hợp đồng</a>
+                                    <a class="product-link" href="">Hợp đồng điện tử</a>
+                                    <a class="product-link" href="">Đổi mật khẩu</a>
+                                    <a class="product-link" href="">Nghiệm thu triển khai</a>
+                                    <a class="product-link" href="">Nghiệm thu bảo trì</a>
+                                    <!-- <a class="product-link" href="">Điều khoản bảo mật</a> -->
+                                    <!-- <a class="product-link" href="">FPT 360 WIFI</a> -->
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub3_mn-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Thanh toán</p>
+                                    <a class="product-link" href="">Thanh toán trực tuyến</a>
+                                    <a class="product-link" href="">Đăng ký trả trước</a>
+                                    <a class="product-link" href="">Lịch sử thanh toán</a>
+                                    <a class="product-link" href="">Quản lý thẻ thanh toán</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub3_mn-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Giới thiệu bạn bè</p>
+                                    <a class="product-link" href="">Giới thiệu bạn bè</a>
+                                    <a class="product-link" href="">Lịch sử giới thiệu</a>
+                                    <a class="product-link" href="">Chính sách và Hướng dẫn</a>
+                                    <!-- <a class="product-link" href="">Điểm giao dịch</a>
+                                    <a class="product-link" href="">Tổng đài 1900 6600</a>
+                                    <a class="product-link" href="">Email</a>
+                                    <a class="product-link" href="">Facebook</a> -->
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <div class="product-logo">
+                                        <img height="30px" src="./imgs/sub3_mn-4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="product-links">
+                                    <p class="product-title">Hỗ trợ</p>
+                                    <a class="product-link" href="">Gửi yêu cầu</a>
+                                    <a class="product-link" href="">Lịch sử yêu cầu</a>
+                                    <a class="product-link" href="">Khôi phục dịch vụ</a>
+                                    <a class="product-link" href="">Chuyển địa điểm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="minibar-link-single">
+                    <div class='minilink-btn-single'>
+                        <p class="minibar-link-txt-single">Đăng ký Online</p>
+                    </div>
+                </div>
+                <div class="minibar-link-single">
+                    <div class='minilink-btn-single'>
+                        <p class="minibar-link-txt-single">Thanh toán Online</p>
+                    </div>
+                </div>
+                <div class="minibar-link-single">
+                    <div class='minilink-btn-single'>
+                        <p class="minibar-link-txt-single">Khách hàng thân thiết</p>
+                    </div>
+                </div>
+                <div class="minibar-link-single">
+                    <div class='minilink-btn-single'>
+                        <p class="minibar-link-txt-single">Giới thiệu bạn bè</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content ">
+        <div class="container-fluid row-1 navbar-none">
+            <div class="container d-flex space-between">
+                <div class="d-flex">
+                    <a class="nav-link" href="">Khách hàng cá nhân</a>
+                    <a class="nav-link unactive" href="">Khách hàng doanh nghiệp</a>
+                    <a class="nav-link unactive" href="">Về FPT Telecom</a>
+                </div>
+                <div class="d-flex row1-navlinks2">
+                    <a class="nav-link unactive" href="">Tuyển dụng</a>
+                    <a class="nav-link unactive" href="">Điểm giao dịch</a>
+                    <a class="nav-link unactive" href="">Lịch phát sóng</a>
+                    <a class="nav-link unactive" href="">Đăng nhập</a>
+                    <a style="margin-left: 6px;" class="nav-link" href="">VI</a>
+                    <a style="padding-left: 4px;" class="nav-link unactive" href="">EN</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid row-2-wrapper" style="box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+            <div class="search-input d-none">
+                <input class="input-search" type="text" name="" id="" placeholder="Tìm kiếm...">
+                <p class="close-input-search" onclick="CloseSearch()">x</p>
+            </div>
+            <div class="container d-flex row-2">
+                <img class="fpt-logo" height="35px" src="./imgs/fpt-logo.svg" alt="">
+                <div class="space space-d-none">
+                </div>
+                <div class="d-flex row2-nav">
+                    <div class="row2-navlink product-service d-flex">
+                        <a class="row2-navtext" href="">Sản phẩm dịch vụ</a>
+                        <span style="display: block;" class="submenu-indicator-chevron"></span>
+                        <div class="product-service-wrapper">
+                            <div class="product-service-list ">
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/mn-net.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title"> Internet FPT</p>
+                                            <a class="product-link" href="">Cáp quang Cá nhân</a>
+                                            <a class="product-link" href="">Cáp quang Doanh nghiệp</a>
+                                            <a class="product-link" href="">Internet + Truyền hình</a>
+                                            <a class="product-link" href="">F-Safe</a>
+                                            <a class="product-link" href="">Gói Lux</a>
+                                            <a class="product-link" href="">Ultra Fast</a>
+                                            <a class="product-link" href="">FPT 360 WIFI</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/mn-tv.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">FPT Play</p>
+                                            <a class="product-link" href="">Gói dịch vụ SMAX</a>
+                                            <a class="product-link" href="">Gói dịch vụ SVIP</a>
+                                            <a class="product-link" href="">Lịch phát sóng</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/mn-service.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Dịch vụ Online</p>
+                                            <a class="product-link" href="">Foxpay</a>
+                                            <a class="product-link" href="">Fshare</a>
+                                            <a class="product-link" href="">Startalk</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/mn-smarthome.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Smart Home</p>
+                                            <a class="product-link" href="">FPT iHome</a>
+                                            <a class="product-link" href="">FPT Smart Home</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/mn-smarthome.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">FPT Camera</p>
+                                            <a class="product-link" href="">FPT Camera IQ 2</a>
+                                            <a class="product-link" href="">FPT Camera IQ 2S</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/mn-fpro.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Dịch vụ kỹ thuật</p>
+                                            <a class="product-link" href="">Wifi Support</a>
+                                            <a class="product-link" href="">IT Remove Helpdesk</a>
+                                            <a class="product-link" href="">IT Onsite Helpdesk</a>
+                                            <a class="product-link" href="">IT Man</a>
+                                            <a class="product-link" href="">IT Outsource</a>
+                                            <a class="product-link" href="">Dịch vụ viễn thông và điện nhẹ</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/i-hifpt_.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Hi FPT</p>
+                                            <a class="product-link" href="">Tính năng nổi bật</a>
+                                            <a class="product-link" href="">Dịch vụ điện lạnh</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="row2-navlink-unopen" href="">Khuyến mại</a>
+                    <div class="row2-navlink support d-flex">
+                        <a class="row2-navtext" href="">Hỗ trợ</a>
+                        <span class="submenu-indicator-chevron"></span>
+                        <div class="support-wrapper">
+                            <div class="support-list">
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub2_mn-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title"> Hỗ trợ thông tin</p>
+                                            <a class="product-link" href="">Câu hỏi thường gặp</a>
+                                            <a class="product-link" href="">Hướng dẫn sử dụng</a>
+                                            <a class="product-link" href="">Lịch phát sóng</a>
+                                            <a class="product-link" href="">Hướng dẫn thủ tục</a>
+                                            <a class="product-link" href="">Quản lý chất lượng dịch vụ</a>
+                                            <a class="product-link" href="">Điều khoản bảo mật</a>
+                                            <!-- <a class="product-link" href="">FPT 360 WIFI</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub2_mn-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Hỗ trợ kỹ thuật</p>
+                                            <a class="product-link" href="">Hướng dẫn cài đặt</a>
+                                            <a class="product-link" href="">Xử lý sự cố</a>
+                                            <!-- <a class="product-link" href="">Lịch phát sóng</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub2_mn-3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Liên hệ 24/7</p>
+                                            <a class="product-link" href="">Danh bạ điện thoại công cộng</a>
+                                            <a class="product-link" href="">Đăng ký Online</a>
+                                            <a class="product-link" href="">Hi FPT</a>
+                                            <a class="product-link" href="">Điểm giao dịch</a>
+                                            <a class="product-link" href="">Tổng đài 1900 6600</a>
+                                            <a class="product-link" href="">Email</a>
+                                            <a class="product-link" href="">Facebook</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub2_mn-4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Phản hồi khách hàng</p>
+                                            <a class="product-link" href="">Góp ý</a>
+                                            <a class="product-link" href="">Khảo sát</a>
+                                            <a class="product-link" href="">Đánh giá về website</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2-navlink member d-flex">
+                        <a class="row2-navtext" href="">Member FPT</a>
+                        <span class="submenu-indicator-chevron"></span>
+                        <div class="member-wrapper">
+                            <div class="member-list">
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub3_mn-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Tài khoản của bạn</p>
+                                            <a class="product-link" href="">Thông tin hợp đồng</a>
+                                            <a class="product-link" href="">Hợp đồng điện tử</a>
+                                            <a class="product-link" href="">Đổi mật khẩu</a>
+                                            <a class="product-link" href="">Nghiệm thu triển khai</a>
+                                            <a class="product-link" href="">Nghiệm thu bảo trì</a>
+                                            <!-- <a class="product-link" href="">Điều khoản bảo mật</a> -->
+                                            <!-- <a class="product-link" href="">FPT 360 WIFI</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub3_mn-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Thanh toán</p>
+                                            <a class="product-link" href="">Thanh toán trực tuyến</a>
+                                            <a class="product-link" href="">Đăng ký trả trước</a>
+                                            <a class="product-link" href="">Lịch sử thanh toán</a>
+                                            <a class="product-link" href="">Quản lý thẻ thanh toán</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub3_mn-3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Giới thiệu bạn bè</p>
+                                            <a class="product-link" href="">Giới thiệu bạn bè</a>
+                                            <a class="product-link" href="">Lịch sử giới thiệu</a>
+                                            <a class="product-link" href="">Chính sách và Hướng dẫn</a>
+                                            <!-- <a class="product-link" href="">Điểm giao dịch</a>
+                                            <a class="product-link" href="">Tổng đài 1900 6600</a>
+                                            <a class="product-link" href="">Email</a>
+                                            <a class="product-link" href="">Facebook</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="product-card d-flex">
+                                        <div>
+                                            <div class="product-logo">
+                                                <img height="30px" src="./imgs/sub3_mn-4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-links">
+                                            <p class="product-title">Hỗ trợ</p>
+                                            <a class="product-link" href="">Gửi yêu cầu</a>
+                                            <a class="product-link" href="">Lịch sử yêu cầu</a>
+                                            <a class="product-link" href="">Khôi phục dịch vụ</a>
+                                            <a class="product-link" href="">Chuyển địa điểm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="row2-navlink-unopen" href="">Đăng ký Online</a>
+                    <a class="row2-navlink-unopen" href="">Thanh toán Online</a>
+                    <a class="row2-navlink-unopen" href="">Khách hàng thân thiết</a>
+                    <a class="row2-navlink-unopen" href="">Giới thiệu bạn bè</a>
+                </div>
+                <img onclick="OpenSearch()" class="search-icon" height="20px" src="/imgs/search-icon.svg" alt="">
+                <img onclick="OpenSlidebarMini()" class="bar-icon bar-d-none" height="20px" src="./imgs/bars-solid.svg"
+                    alt="">
+            </div>
+        </div>
+        <div class="row-3">
+            <div class="main-img-wrapper">
+                <div class="main-img img-1"></div>
+                <div class="main-img img-2"></div>
+                <div class="main-img img-3"></div>
+                <div class="main-img img-4"></div>
+                <div class="main-img img-5"></div>
+            </div>
+            <div class="checkpoint">
+                <button class="check-1"></button>
+                <button class="check-2"></button>
+                <button class="check-3"></button>
+                <button class="check-4"></button>
+                <button class="check-5"></button>
+            </div>
+        </div>
+
+        <div class="row-4">
+            <div class="col-4 col-md-12">
+                <div class="row4-register m-b-0">
+                    <img height="100%" class="row4-register-img" src="./imgs/dki.png" alt="">
+                    <p class="row4-register-txt">Đăng ký Online</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-12">
+                <div class="row4-new">
+                    <img height="100%" class="row4-new-img" src="./imgs/tin tuc.png" alt="">
+                    <p class="row4-new-txt">Tin tức</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-12">
+                <div class="row4-support">
+                    <img height="100%" class="row4-support-img" src="./imgs/support.png" alt="">
+                    <p class="row4-support-txt">Hỗ trợ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-5">
+            <h1 class="row5-title">Sản phẩm dịch vụ</h1>
+            <div class="product-1">
+                <div class="product1-title">FPT Play</div>
+                <div class="product1-detail">
+                    <a class="product1-detail-txt" href="">Chi tiết sản phẩm</a>
+                    <img class="product1-detail-logo" height="18px" src="./imgs/icon-detail-product.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row-6">
+            <div class="col-6 col-md-12">
+                <div class="product-2">
+                    <div class="product1-title">FPT Camera</div>
+                    <div class="product-tip">
+                        <span class="tip-1">Công Nghệ</span>
+                        <span>Tạo Khác Biệt</span>
+                    </div>
+                    <div class="product1-detail-1">
+                        <a class="product1-detail-txt" href="">Chi tiết sản phẩm</a>
+                        <img class="product1-detail-logo" height="18px" src="./imgs/icon-detail-product.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-12">
+                <div class="product-3">
+                    <div class="product1-title">F-Safe</div>
+                    <div class="product-tip">
+                        <span class="tip-2">Online</span>
+                        <span>An Toàn</span>
+                    </div>
+                    <div class="product1-detail-1">
+                        <a class="product1-detail-txt" href="">Chi tiết sản phẩm</a>
+                        <img class="product1-detail-logo" height="18px" src="./imgs/icon-detail-product.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-7">
+            <h1 class="row5-title">Tin tức - Khuyến mại</h1>
+            <div class="new-and-discount-btn">
+                <button class="new-btn">Tin tức</button>
+                <div style="width: 30px;"></div>
+                <button class="discount-btn">Khuyến mại</button>
+            </div>
+        </div>
+        <div class="row-8">
+            <div class="col-6 col-sm-12">
+                <div class="new-card new-card-1">
+                    <div class="new-content">Đổi điểm FGold trên ứng dụng Hi FPT nhận ngay loạt quà tặng hấp dẫn</div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-12">
+                <div class="new-card new-card-2">
+                    <div class="new-content">Trước Roronoa Zoro, mỹ nam Mackenyu đã gây sốt vì vai diễn này</div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-12">
+                <div class="new-card new-card-3">
+                    <div class="new-content">Kim Myung Soo trở lại hậu xuất ngũ, gây tò mò vì mối quan hệ với bạn diễn
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-12">
+                <div class="new-card new-card-4">
+                    <div class="new-content">Liên tục 'hái quả' từ thị trường nước ngoài, FPT lãi hơn 1.200 tỷ sau 2
+                        tháng đầu năm</div>
+                </div>
+            </div>
+            <div class="col-4 col-sm-12">
+                <div class="new-card new-card-5">
+                    <div class="new-content">FPT trình diễn sản phẩm công nghệ kiến tạo hạnh phúc tại Techfest VietNam
+                        2022</div>
+                </div>
+            </div>
+            <div class="see-all">
+                <a class="product1-detail-txt" href="">Xem tất cả</a>
+                <img class="product1-detail-logo" height="18px" src="./imgs/icon-detail-product.svg" alt="">
+            </div>
+        </div>
+
+        <div class="foot">
+            <div class="foot-container d-flex d-wrap">
+                <div class="col-12 foot-header">
+                    <img class="foot-fptlogo" height="40px" src="./imgs/fpt-logo.svg" alt="">
+                    <div class="foot-contact-logos">
+                        <img class="foot-contact-logo" height="40px" src="./imgs/foot-hifpt.png" alt="">
+                        <img class="foot-contact-logo" height="40px" src="./imgs/foot-youtube.png" alt="">
+                        <img class="foot-contact-logo" height="40px" src="./imgs/foot-instagram.png" alt="">
+                        <img class="foot-contact-logo" height="40px" src="./imgs/foot-zalo.png" alt="">
+                        <img class="foot-contact-logo" height="40px" src="./imgs/foot-facebook.png" alt="">
+                    </div>
+                </div>
+                <div class="foot-content">
+                    <div class="md-display">
+                        <div class="foot-minibar">
+                            <div class="foot-minibar-btn">
+                                <p>Về FPT Telecom</p>
+                                <p class="foot-minibar-btn-arrow">></p>
+                            </div>
+                            <div class="links-foot-mini">
+                                <div class="link-foot-mini d-none">
+                                    <a class="foot-link" href="">Giới thiệu chung</a>
+                                    <a class="foot-link" href="">Liên kết - Thành viên</a>
+                                    <a class="foot-link" href="">Khách hàng - Đối tác</a>
+                                    <a class="foot-link" href="">Quan hệ cổ đông</a>
+                                    <a class="foot-link" href="">Tập đoàn FPT</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="foot-minibar">
+                            <div class="foot-minibar-btn">
+                                <p>Khách hàng FPT Telecom</p>
+                                <p class="foot-minibar-btn-arrow">></p>
+                            </div>
+                            <div class="links-foot-mini">
+                                <div class="link-foot-mini d-none">
+                                    <a class="foot-link" href="">Hướng dẫn sử dụng dịch vụ</a>
+                                    <a class="foot-link" href="">Giới thiệu bạn bè</a>
+                                    <a class="foot-link" href="">Thanh toán Online</a>
+                                    <a class="foot-link" href="">Góp ý khách hàng</a>
+                                    <a class="foot-link" href="">Lịch phát sóng</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="foot-minibar">
+                            <div class="foot-minibar-btn">
+                                <p>Chưa là khách hàng của FPT Telecom</p>
+                                <p class="foot-minibar-btn-arrow">></p>
+                            </div>
+                            <div class="links-foot-mini">
+                                <div class="link-foot-mini d-none">
+                                    <a class="foot-link" href="">Đăng ký Online</a>
+                                    <a class="foot-link" href="">Sản phẩm dịch vụ</a>
+                                    <a class="foot-link" href="">Khuyến mại</a>
+                                    <a class="foot-link" href="">Tìm điểm giao dịch</a>
+                                    <a class="foot-link" href="">Tin tức</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-12">
+                        <div class="foot-content-desc">
+                            <p>Giấy chứng nhận ĐKKD số 0101778163 do Sở Kế hoạch Đầu tư Thành phố Hà Nội cấp ngày
+                                28/07/2005</p>
+                            <p>Giấp phép cung cấp dịch vụ Viễn thông số 147/GP-CVT ngày 02/05/2013</p>
+                            <div class="foot-txt">Công ty Cổ phần Viễn thông FPT</div>
+                            <div class="foot-txt">Địa chỉ liên lạc: Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm
+                                Văn Bạch, quận Cầu Giấy, TP. Hà Nội</div>
+
+                            <div class="foot-txt">Thư điện tử: hotrokhachhang@fpt.com.vn</div>
+                            <div class="foot-txt">Số điện thoại liên hệ: 024 7300 2222</div>
+                            <div class="foot-txt">Tên người đại diện: Ông Hoàng Việt Anh</div>
+                            <img class="logo-notice" style="display: block; margin: 20px 0 0 0;"
+                                src="./imgs/20150827110756-dathongbao.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-8 col-8-none">
+                        <div class="foot-link-wrapper">
+                            <div class="col-3">
+                                <div class="foot-link-card">
+                                    <p class="foot-title">Về FPT Telecom</p>
+                                    <a class="foot-link" href="">Giới thiệu chung</a>
+                                    <a class="foot-link" href="">Liên kết - Thành viên</a>
+                                    <a class="foot-link" href="">Khách hàng - Đối tác</a>
+                                    <a class="foot-link" href="">Quan hệ cổ đông</a>
+                                    <a class="foot-link" href="">Tập đoàn FPT</a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="foot-link-card">
+                                    <p class="foot-title">Khách hàng FPT Telecom</p>
+                                    <a class="foot-link" href="">Hướng dẫn sử dụng dịch vụ</a>
+                                    <a class="foot-link" href="">Giới thiệu bạn bè</a>
+                                    <a class="foot-link" href="">Thanh toán Online</a>
+                                    <a class="foot-link" href="">Góp ý khách hàng</a>
+                                    <a class="foot-link" href="">Lịch phát sóng</a>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="foot-link-card">
+                                    <p class="foot-title">Chưa là khách hàng của FPT Telecom</p>
+                                    <a class="foot-link" href="">Đăng ký Online</a>
+                                    <a class="foot-link" href="">Sản phẩm dịch vụ</a>
+                                    <a class="foot-link" href="">Khuyến mại</a>
+                                    <a class="foot-link" href="">Tìm điểm giao dịch</a>
+                                    <a class="foot-link" href="">Tin tức</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-brands">
+                    <img src="./imgs/brandfoot1.png" alt="" class="foot-brand-img">
+                    <img src="./imgs/brandfoot2.png" alt="" class="foot-brand-img">
+                    <img src="./imgs/brandfoot3.png" alt="" class="foot-brand-img">
+                    <img src="./imgs/brandfoot4.png" alt="" class="foot-brand-img">
+                    <img src="./imgs/brandfoot5.png" alt="" class="foot-brand-img">
+                    <img src="./imgs/brandfoot6.png" alt="" class="foot-brand-img">
+                    <img src="./imgs/brandfoot7.png" alt="" class="foot-brand-img">
+                </div>
+            </div>
+        </div>
+        <p class="end">© 2018 Bản quyền thuộc về FPT Telecom</p>
+    </main>
+
+    <script src="./main.js"></script>
+    </body>
+
+</html>

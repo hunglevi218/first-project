@@ -1,0 +1,131 @@
+@media screen and (max-width: 991px) {
+    .row1-navlinks2 {
+        display: none;
+    }
+    .main-img{
+        height: 500px;
+    }
+    .row2-nav{
+        display: none;
+    }
+    .product-logo{
+        margin-top: 20px;
+    }
+    .product-links{
+        margin-top: 20px; 
+        font-size: 14px;
+    }
+    .product-title{
+        font-size: 12px;
+    }
+    .col-md-12{
+        width: calc(12 * 100% / 12);
+        box-sizing: content-box\;
+    }
+    .row-4{
+        display: block;
+    }
+    .row-6{
+        display: block;
+    }
+    .row-3{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-none {
+        display: none;
+    }
+    .space{
+        display: none;
+    }
+    .fpt-logo{
+        order: 1;
+    }
+    .search-icon{
+        order: 0;
+        padding-left: 0;
+    }
+    .bar-icon{
+        order: 2;
+    }
+    .row-2{
+        justify-content: space-between;
+    }
+    /* .main-img{
+        height: 300px;
+    } */
+    .row-2-wrapper{
+        position: static;
+    }
+    /* .search-input{
+        height: 100px;
+    } */
+    .col-sm-12{
+        width: calc(12 * 100% / 12);
+        box-sizing: content-box;
+    }
+    .foot-content-desc{
+        padding: 0;
+    }
+    .foot-brands{
+        display: none;
+    }
+    .foot-header{
+        order: 2;
+    }
+    .foot-fptlogo{
+        display: none;
+    }
+    .foot-contact-logos{
+        margin: auto;
+    }
+    .col-8-none{
+        display: none;
+    }
+    .foot-content{
+        display: block;
+    }
+    .md-display{
+        padding: 30px 0 0 0;
+    }
+    .foot-content-desc{
+        border-top: 1px solid #5555552a;
+    }
+    .product-1, .product-2, .product-3{
+        height: 600px;
+    }
+    .product1-title{
+        padding-top: 330px;
+    }
+}
+@media screen and (min-width: 769px)
+{
+    .md-display{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bar-d-none, .space-d-none, .slidebar-mini, .minibar-wrapper{
+        display: none;
+    }
+    .main-content.main-content-hide{
+        transform: scale(1);
+    }  
+}
+
+@media screen and (min-width: 769px) {
+    .personal-customer{
+        display: none;
+    }   
+}
+@media screen and (max-width: 736px){
+    .product-1{
+        height: 500px;
+    }
+}
+.d-none{
+    display: none;
+}
